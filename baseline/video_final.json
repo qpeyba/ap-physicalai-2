@@ -1,0 +1,107 @@
+{
+  "checkpoint": "Report/model_final.pt",
+  "environment": "PandaPickCube",
+  "episodes": [
+    {
+      "episode": 1,
+      "seed": 42,
+      "steps": 150,
+      "reward": 1482.7102081775665,
+      "grasped": true,
+      "success": true,
+      "final_position_error_m": 0.010298082389080808
+    },
+    {
+      "episode": 2,
+      "seed": 43,
+      "steps": 150,
+      "reward": 1494.8725078701973,
+      "grasped": true,
+      "success": true,
+      "final_position_error_m": 0.011770373474868803
+    },
+    {
+      "episode": 3,
+      "seed": 44,
+      "steps": 150,
+      "reward": 1508.308500289917,
+      "grasped": true,
+      "success": true,
+      "final_position_error_m": 0.0048326966453989635
+    },
+    {
+      "episode": 4,
+      "seed": 45,
+      "steps": 150,
+      "reward": 1138.0369938015938,
+      "grasped": true,
+      "success": true,
+      "final_position_error_m": 0.026363671115457236
+    },
+    {
+      "episode": 5,
+      "seed": 46,
+      "steps": 150,
+      "reward": 1536.123319029808,
+      "grasped": true,
+      "success": true,
+      "final_position_error_m": 0.007627790961145757
+    },
+    {
+      "episode": 6,
+      "seed": 47,
+      "steps": 150,
+      "reward": 1598.9681972265244,
+      "grasped": true,
+      "success": true,
+      "final_position_error_m": 0.01029759752786463
+    },
+    {
+      "episode": 7,
+      "seed": 48,
+      "steps": 150,
+      "reward": 1512.3031895756721,
+      "grasped": true,
+      "success": true,
+      "final_position_error_m": 0.002248795582420996
+    },
+    {
+      "episode": 8,
+      "seed": 49,
+      "steps": 150,
+      "reward": 1373.6171122789383,
+      "grasped": true,
+      "success": true,
+      "final_position_error_m": 0.012890750158514987
+    },
+    {
+      "episode": 9,
+      "seed": 50,
+      "steps": 150,
+      "reward": 1532.5296248793602,
+      "grasped": true,
+      "success": true,
+      "final_position_error_m": 0.010321900873483057
+    },
+    {
+      "episode": 10,
+      "seed": 51,
+      "steps": 150,
+      "reward": 1577.7101002931595,
+      "grasped": true,
+      "success": true,
+      "final_position_error_m": 0.008972877095759066
+    }
+  ],
+  "seed": 42,
+  "grasp_z_threshold_m": 0.2,
+  "success_distance_threshold_m": 0.05,
+  "grasp_rate": 1.0,
+  "success_rate": 1.0,
+  "mean_reward": 1475.5179753422738,
+  "fps": 25.0,
+  "frames": 760,
+  "obs_noise": 0.0,
+  "cube_x": null,
+  "cube_y": null
+}

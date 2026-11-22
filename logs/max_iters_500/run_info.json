@@ -1,0 +1,10 @@
+{
+  "environment": "PandaPickCube",
+  "device": "cuda:0",
+  "num_envs": 2048,
+  "max_iterations": 500,
+  "training_seed": 1,
+  "steps_per_env_per_iteration": 40,
+  "training_seconds": 535.1629540920258,
+  "resume": null
+}

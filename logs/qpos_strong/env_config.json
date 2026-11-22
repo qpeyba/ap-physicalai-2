@@ -1,0 +1,18 @@
+{
+  "action_repeat": 1,
+  "action_scale": 0.04,
+  "ctrl_dt": 0.02,
+  "episode_length": 150,
+  "impl": "jax",
+  "nconmax": 49152,
+  "njmax": 128,
+  "reward_config": {
+    "scales": {
+      "box_target": 8.0,
+      "gripper_box": 4.0,
+      "no_floor_collision": 0.25,
+      "robot_target_qpos": 30.0
+    }
+  },
+  "sim_dt": 0.005
+}

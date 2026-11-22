@@ -1,0 +1,135 @@
+{
+  "checkpoint": "logs/qpos_strong/model_1000.pt",
+  "environment": "PandaPickCube",
+  "episodes": [
+    {
+      "episode": 1,
+      "seed": 42,
+      "steps": 150,
+      "reward": 4537.755298614502,
+      "grasped": false,
+      "success": false,
+      "final_position_error_m": 0.22826174769780208,
+      "max_cube_z_m": 0.029999999329447746
+    },
+    {
+      "episode": 2,
+      "seed": 43,
+      "steps": 150,
+      "reward": 4539.031862258911,
+      "grasped": false,
+      "success": false,
+      "final_position_error_m": 0.38690854634833727,
+      "max_cube_z_m": 0.029999999329447746
+    },
+    {
+      "episode": 3,
+      "seed": 44,
+      "steps": 150,
+      "reward": 4535.610702514648,
+      "grasped": false,
+      "success": false,
+      "final_position_error_m": 0.42474300449529157,
+      "max_cube_z_m": 0.029999999329447746
+    },
+    {
+      "episode": 4,
+      "seed": 45,
+      "steps": 150,
+      "reward": 4537.210109710693,
+      "grasped": false,
+      "success": false,
+      "final_position_error_m": 0.3733172379203862,
+      "max_cube_z_m": 0.029999999329447746
+    },
+    {
+      "episode": 5,
+      "seed": 46,
+      "steps": 150,
+      "reward": 4525.429025650024,
+      "grasped": false,
+      "success": false,
+      "final_position_error_m": 0.3968711759768037,
+      "max_cube_z_m": 0.029999999329447746
+    },
+    {
+      "episode": 6,
+      "seed": 47,
+      "steps": 150,
+      "reward": 4534.457206726074,
+      "grasped": false,
+      "success": false,
+      "final_position_error_m": 0.29833779476216765,
+      "max_cube_z_m": 0.029999999329447746
+    },
+    {
+      "episode": 7,
+      "seed": 48,
+      "steps": 150,
+      "reward": 4530.565298080444,
+      "grasped": false,
+      "success": false,
+      "final_position_error_m": 0.3632558522098817,
+      "max_cube_z_m": 0.029999999329447746
+    },
+    {
+      "episode": 8,
+      "seed": 49,
+      "steps": 150,
+      "reward": 4534.62423324585,
+      "grasped": false,
+      "success": false,
+      "final_position_error_m": 0.43564459376459475,
+      "max_cube_z_m": 0.029999999329447746
+    },
+    {
+      "episode": 9,
+      "seed": 50,
+      "steps": 150,
+      "reward": 4544.316038131714,
+      "grasped": false,
+      "success": false,
+      "final_position_error_m": 0.38867219570528566,
+      "max_cube_z_m": 0.029999999329447746
+    },
+    {
+      "episode": 10,
+      "seed": 51,
+      "steps": 150,
+      "reward": 4528.076421737671,
+      "grasped": false,
+      "success": false,
+      "final_position_error_m": 0.3835562993328942,
+      "max_cube_z_m": 0.029999999329447746
+    }
+  ],
+  "seed": 42,
+  "grasp_z_threshold_m": 0.2,
+  "success_distance_threshold_m": 0.05,
+  "grasp_rate": 0.0,
+  "success_rate": 0.0,
+  "mean_reward": 4534.707619667053,
+  "fps": 25.0,
+  "frames": 760,
+  "obs_noise": 0.0,
+  "cube_x": null,
+  "cube_y": null,
+  "environment_config": {
+    "action_repeat": 1,
+    "action_scale": 0.04,
+    "ctrl_dt": 0.02,
+    "episode_length": 150,
+    "impl": "jax",
+    "nconmax": 49152,
+    "njmax": 128,
+    "reward_config": {
+      "scales": {
+        "box_target": 8.0,
+        "gripper_box": 4.0,
+        "no_floor_collision": 0.25,
+        "robot_target_qpos": 30.0
+      }
+    },
+    "sim_dt": 0.005
+  }
+}

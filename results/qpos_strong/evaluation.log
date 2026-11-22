@@ -1,0 +1,71 @@
+Загрузка чекпоинта: logs/qpos_strong/model_1000.pt
+Device -- cuda:0
+Key device -- {CudaDevice(id=0)}
+obs_shape: 66
+JITing reset and step
+Done JITing reset and step
+cfg={'algorithm': {'class_name': 'PPO', 'clip_param': 0.2, 'desired_kl': 0.01, 'entropy_coef': 0.01, 'gamma': 0.97, 'lam': 0.95, 'learning_rate': 0.001, 'max_grad_norm': 1.0, 'num_learning_epochs': 4, 'num_mini_batches': 8, 'schedule': 'adaptive', 'use_clipped_value_loss': True, 'value_loss_coef': 1.0}, 'checkpoint': -1, 'empirical_normalization': True, 'experiment_name': 'test', 'load_run': '-1', 'max_iterations': 100000, 'num_steps_per_env': 40, 'policy': {'activation': 'elu', 'actor_hidden_dims': [512, 256, 128], 'class_name': 'ActorCritic', 'critic_hidden_dims': [512, 256, 128], 'init_noise_std': 1.0}, 'resume': False, 'resume_path': None, 'run_name': '', 'runner_class_name': 'OnPolicyRunner', 'save_interval': 50, 'seed': 1}
+cfg={'algorithm': {'class_name': 'PPO', 'clip_param': 0.2, 'desired_kl': 0.01, 'entropy_coef': 0.01, 'gamma': 0.97, 'lam': 0.95, 'learning_rate': 0.001, 'max_grad_norm': 1.0, 'num_learning_epochs': 4, 'num_mini_batches': 8, 'schedule': 'adaptive', 'use_clipped_value_loss': True, 'value_loss_coef': 1.0}, 'checkpoint': -1, 'empirical_normalization': True, 'experiment_name': 'test', 'load_run': '-1', 'max_iterations': 100000, 'num_steps_per_env': 40, 'resume': False, 'resume_path': None, 'run_name': '', 'runner_class_name': 'OnPolicyRunner', 'save_interval': 50, 'seed': 1, 'actor': {'class_name': 'rsl_rl.models.mlp_model.MLPModel', 'hidden_dims': [512, 256, 128], 'activation': 'elu', 'distribution_cfg': {'class_name': 'rsl_rl.modules.distribution.GaussianDistribution', 'init_std': 1.0}}, 'critic': {'class_name': 'rsl_rl.models.mlp_model.MLPModel', 'hidden_dims': [512, 256, 128], 'activation': 'elu'}, 'obs_groups': {'actor': ['state'], 'critic': ['state']}}
+--------------------------------------------------------------------------------
+Resolved observation sets: 
+	 actor :  ['state']
+	 critic :  ['state']
+--------------------------------------------------------------------------------
+Actor Model: MLPModel(
+  (obs_normalizer): Identity()
+  (distribution): GaussianDistribution()
+  (mlp): MLP(
+    (0): Linear(in_features=66, out_features=512, bias=True)
+    (1): ELU(alpha=1.0)
+    (2): Linear(in_features=512, out_features=256, bias=True)
+    (3): ELU(alpha=1.0)
+    (4): Linear(in_features=256, out_features=128, bias=True)
+    (5): ELU(alpha=1.0)
+    (6): Linear(in_features=128, out_features=8, bias=True)
+  )
+)
+Critic Model: MLPModel(
+  (obs_normalizer): Identity()
+  (mlp): MLP(
+    (0): Linear(in_features=66, out_features=512, bias=True)
+    (1): ELU(alpha=1.0)
+    (2): Linear(in_features=512, out_features=256, bias=True)
+    (3): ELU(alpha=1.0)
+    (4): Linear(in_features=256, out_features=128, bias=True)
+    (5): ELU(alpha=1.0)
+    (6): Linear(in_features=128, out_features=1, bias=True)
+  )
+)
+Среда:    PandaPickCube
+Эпизодов: 10
+
+/usr/local/lib/python3.10/dist-packages/jax/_src/interpreters/xla.py:119: RuntimeWarning: overflow encountered in cast
+  return np.asarray(x, dtypes.canonicalize_dtype(x.dtype))
+  Эпизод 1/10: reward = 4537.76, захват: ✘, успех: ✘ (расстояние до цели = 0.228 м, threshold = 0.05 м)
+  0%|          | 0/76 [00:00<?, ?it/s] 33%|███▎      | 25/76 [00:00<00:00, 247.97it/s] 66%|██████▌   | 50/76 [00:00<00:00, 164.92it/s] 91%|█████████ | 69/76 [00:00<00:00, 147.38it/s]100%|██████████| 76/76 [00:00<00:00, 155.05it/s]
+  Эпизод 2/10: reward = 4539.03, захват: ✘, успех: ✘ (расстояние до цели = 0.387 м, threshold = 0.05 м)
+  0%|          | 0/76 [00:00<?, ?it/s]  8%|▊         | 6/76 [00:00<00:01, 59.75it/s] 53%|█████▎    | 40/76 [00:00<00:00, 219.14it/s] 82%|████████▏ | 62/76 [00:00<00:00, 194.37it/s]100%|██████████| 76/76 [00:00<00:00, 173.24it/s]
+  Эпизод 3/10: reward = 4535.61, захват: ✘, успех: ✘ (расстояние до цели = 0.425 м, threshold = 0.05 м)
+  0%|          | 0/76 [00:00<?, ?it/s] 26%|██▋       | 20/76 [00:00<00:00, 198.35it/s] 53%|█████▎    | 40/76 [00:00<00:00, 144.22it/s] 74%|███████▎  | 56/76 [00:00<00:00, 138.50it/s] 93%|█████████▎| 71/76 [00:00<00:00, 136.39it/s]100%|██████████| 76/76 [00:00<00:00, 140.18it/s]
+  Эпизод 4/10: reward = 4537.21, захват: ✘, успех: ✘ (расстояние до цели = 0.373 м, threshold = 0.05 м)
+  0%|          | 0/76 [00:00<?, ?it/s]  1%|▏         | 1/76 [00:00<00:10,  7.50it/s] 18%|█▊        | 14/76 [00:00<00:00, 70.73it/s] 36%|███▌      | 27/76 [00:00<00:00, 93.58it/s] 53%|█████▎    | 40/76 [00:00<00:00, 105.21it/s] 68%|██████▊   | 52/76 [00:00<00:00, 109.47it/s] 86%|████████▌ | 65/76 [00:00<00:00, 113.83it/s]100%|██████████| 76/76 [00:00<00:00, 102.67it/s]
+  Эпизод 5/10: reward = 4525.43, захват: ✘, успех: ✘ (расстояние до цели = 0.397 м, threshold = 0.05 м)
+  0%|          | 0/76 [00:00<?, ?it/s] 21%|██        | 16/76 [00:00<00:00, 157.02it/s] 42%|████▏     | 32/76 [00:00<00:00, 144.77it/s] 62%|██████▏   | 47/76 [00:00<00:00, 139.10it/s] 80%|████████  | 61/76 [00:00<00:00, 139.04it/s] 99%|█████████▊| 75/76 [00:00<00:00, 136.13it/s]100%|██████████| 76/76 [00:00<00:00, 138.70it/s]
+  Эпизод 6/10: reward = 4534.46, захват: ✘, успех: ✘ (расстояние до цели = 0.298 м, threshold = 0.05 м)
+  0%|          | 0/76 [00:00<?, ?it/s] 46%|████▌     | 35/76 [00:00<00:00, 342.96it/s] 92%|█████████▏| 70/76 [00:00<00:00, 198.87it/s]100%|██████████| 76/76 [00:00<00:00, 202.93it/s]
+  Эпизод 7/10: reward = 4530.57, захват: ✘, успех: ✘ (расстояние до цели = 0.363 м, threshold = 0.05 м)
+  0%|          | 0/76 [00:00<?, ?it/s]  1%|▏         | 1/76 [00:00<00:07,  9.59it/s] 20%|█▉        | 15/76 [00:00<00:00, 84.20it/s] 38%|███▊      | 29/76 [00:00<00:00, 105.76it/s] 57%|█████▋    | 43/76 [00:00<00:00, 117.72it/s] 75%|███████▌  | 57/76 [00:00<00:00, 124.04it/s] 93%|█████████▎| 71/76 [00:00<00:00, 127.58it/s]100%|██████████| 76/76 [00:00<00:00, 115.11it/s]
+  Эпизод 8/10: reward = 4534.62, захват: ✘, успех: ✘ (расстояние до цели = 0.436 м, threshold = 0.05 м)
+  0%|          | 0/76 [00:00<?, ?it/s] 59%|█████▉    | 45/76 [00:00<00:00, 443.93it/s]100%|██████████| 76/76 [00:00<00:00, 505.61it/s]
+  Эпизод 9/10: reward = 4544.32, захват: ✘, успех: ✘ (расстояние до цели = 0.389 м, threshold = 0.05 м)
+  0%|          | 0/76 [00:00<?, ?it/s]  1%|▏         | 1/76 [00:00<00:08,  9.33it/s] 20%|█▉        | 15/76 [00:00<00:00, 82.91it/s] 38%|███▊      | 29/76 [00:00<00:00, 106.92it/s] 57%|█████▋    | 43/76 [00:00<00:00, 118.65it/s] 74%|███████▎  | 56/76 [00:00<00:00, 120.83it/s] 92%|█████████▏| 70/76 [00:00<00:00, 124.65it/s]100%|██████████| 76/76 [00:00<00:00, 113.37it/s]
+  Эпизод 10/10: reward = 4528.08, захват: ✘, успех: ✘ (расстояние до цели = 0.384 м, threshold = 0.05 м)
+  0%|          | 0/76 [00:00<?, ?it/s] 39%|███▉      | 30/76 [00:00<00:00, 298.35it/s] 79%|███████▉  | 60/76 [00:00<00:00, 209.79it/s]100%|██████████| 76/76 [00:00<00:00, 192.81it/s]
+
+Итого: захватов 0/10, success rate = 0/10, средняя награда 4534.71
+
+Сохранение видео: results/qpos_strong/video.mp4 (760 кадров, 25 fps)
+/usr/lib/python3.10/subprocess.py:1796: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = _posixsubprocess.fork_exec(
+Метрики: results/qpos_strong/video.json
+Готово!

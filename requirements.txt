@@ -1,0 +1,17 @@
+# GPU baseline package inventory. For installation use scripts/install_baseline_dependencies.sh;
+# a single pip transaction cannot satisfy the Torch/JAX CuDNN metadata constraints.
+--extra-index-url https://download.pytorch.org/whl/cu124
+torch==2.6.0+cu124
+playground[learning]==0.1.0
+rsl-rl-lib==5.5.1
+brax==0.14.1
+jax[cuda12]==0.6.2
+jaxlib==0.6.2
+mujoco==3.5.0
+mujoco-mjx==3.5.0
+numpy==2.2.6
+tensordict==0.14.2
+imageio[ffmpeg]==2.37.3
+imageio-ffmpeg==0.6.0
+tensorboard==2.21.0
+matplotlib==3.10.9
